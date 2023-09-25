@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+﻿using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WpfAppCoregl
 {
@@ -23,6 +11,32 @@ namespace WpfAppCoregl
         public MainWindow()
         {
             InitializeComponent();
+            GLView.MouseWheel += OnMouseWheel;
+            GLView.MouseDown += OnMouseDown;
+            GLView.MouseUp += OnMouseUp;
+        }
+
+        private void Render() => GLView.InvalidateVisual();
+
+        private void OnMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            Render();
+        }
+
+        private void OnMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Render();
+        }
+
+        private void OnMouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            Render();
+        }
+
+        private void GLView_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
+        {
+            //TODO Render an image
+            //it rises by Render method
         }
     }
 }
