@@ -1,0 +1,13 @@
+1. Uses OPentTK 3 and MSFramework 4.8
+2. Uses WPF project Type SKiaSharp graphic library for renderer
+3. Main futures
+3.1. Build and draw 3D objects
+3.2. Rotate translate 3D objects into scene
+3.3. Zoom and Rotate a scene 
+3.4. Draws textures on poligons of 3D objects rotate the texture for each face (polygone)
+3.5. Draws outline 3d objects (thickness and color of line should be settingable and changeble)
+3.6. Detect and handle click on 3d Object
+3.7. Draws text cyrilic and latin and digits
+3.8. Shows "buttons" near 3d object (side for buttons should be settingable)
+3.9. Detects a collisions of 3d objects
+4. Center of 3d object should be centered and it should able to move without object (moveble)
