@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppCoregl", "WpfAppCoregl\WpfAppCoregl.csproj", "{2174F625-D5B5-4E06-87B4-9D3D878E7F7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2174F625-D5B5-4E06-87B4-9D3D878E7F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2174F625-D5B5-4E06-87B4-9D3D878E7F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2174F625-D5B5-4E06-87B4-9D3D878E7F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2174F625-D5B5-4E06-87B4-9D3D878E7F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38B6E743-7FC3-4571-A083-17F1F8B08C9D}
+	EndGlobalSection
+EndGlobal
