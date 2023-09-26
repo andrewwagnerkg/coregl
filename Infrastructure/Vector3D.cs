@@ -21,7 +21,7 @@ namespace Infrastructure
         {
             if (ReferenceEquals(null, other)) return false;
             if (!ReferenceEquals(this, other)) return false;
-            return X == other.X & Y == other.Y & Z == other.Z;
+            return X == other.X && Y == other.Y && Z == other.Z;
         }
 
         public static bool operator ==(Vector3D a, Vector3D b) => a.Equals(b);
@@ -30,7 +30,6 @@ namespace Infrastructure
 
         public override string ToString() => $"VECTOR3D X:{X} Y:{Y} Z:{Z}";
 
-        //TODO it should re design by aproximate square root
         public double Magnitude() => Math.Sqrt(X * X + Y * Y + Z * Z);
 
         public static Vector3D operator +(Vector3D a, Vector3D b)
@@ -42,12 +41,10 @@ namespace Infrastructure
         public static Vector3D operator *(Vector3D a, double phi)
             => new Vector3D(a.X * phi, a.Y * phi, a.Z * phi);
 
-        public bool IsZero => X == 0 & Y == 0 & Z == 0;
+        public bool IsZero => X == 0 && Y == 0 && Z == 0;
 
         public double Dot(Vector3D a, Vector3D b)
-        {
-            if (a.IsZero | b.IsZero) return 0;
-            return a.X * b.X + a.Y * b.Y + a.Z * b.Z;
-        }
+            => a.X * b.X + a.Y * b.Y + a.Z * b.Z;
+        
     }
 }
