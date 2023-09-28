@@ -28,7 +28,7 @@ namespace Infrastructure
 
         public static bool operator !=(Vector3D a, Vector3D b) => !a.Equals(b);
 
-        public override string ToString() => $"VECTOR3D X:{X} Y:{Y} Z:{Z}";
+        public override string ToString() => $"VECTOR3D {{X:{X}; Y:{Y}; Z:{Z}}}";
 
         public double Magnitude() => Math.Sqrt(X * X + Y * Y + Z * Z);
 
@@ -45,5 +45,9 @@ namespace Infrastructure
 
         public double Dot(Vector3D a, Vector3D b)
             => a.X * b.X + a.Y * b.Y + a.Z * b.Z;
+
+        public Vector3D Cross(Vector3D a, Vector3D b)
+            => new Vector3D(a.Y * b.Z - a.Z * b.Y, a.Z * b.X - a.X * b.Z, a.X * b.Y - a.Y * b.X);
+
     }
 }
